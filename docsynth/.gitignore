@@ -1,0 +1,5 @@
+debug.log
+*.json*
+!*example*
+
+output/
