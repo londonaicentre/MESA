@@ -1,0 +1,7 @@
+[project]
+name = "mesa"
+version = "0.1.0"
+description = "mesa"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
