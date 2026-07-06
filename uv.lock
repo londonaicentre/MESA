@@ -1117,21 +1117,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "londonaicentre-mesa-datagen"
+version = "1.0.0"
+source = { git = "ssh://git@github.com/londonaicentre/MESA-Build?subdirectory=lib%2Fdatagen#4ffdd06f9e444600709ad9a0f099b2f19cd32cdc" }
+dependencies = [
+    { name = "boto3" },
+    { name = "litellm" },
+    { name = "londonaicentre-mesa-types" },
+    { name = "londonaicentre-mesa-utils" },
+    { name = "pydantic-settings" },
+    { name = "pyyaml" },
+]
+
+[[package]]
 name = "londonaicentre-mesa-types"
 version = "2.3.0"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "ssh://git@github.com/londonaicentre/MESA-Build?subdirectory=lib%2Ftypes#4ffdd06f9e444600709ad9a0f099b2f19cd32cdc" }
 dependencies = [
     { name = "pydantic" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/74/b8/4fdde6193df360c7fe3777d5fcd7af7d47014b114a71dd5c9d8fa91fc4a8/londonaicentre_mesa_types-2.3.0.tar.gz", hash = "sha256:317742e43c771e62bcb199f4340111e8c0c178ed6f093e93259b7e1f0840a96a", size = 2558, upload-time = "2026-06-14T13:29:36.698Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/a9/b5ecb5ce9afe23ff40c02071ede58aa570179ea6b4a86717d21282edb9ce/londonaicentre_mesa_types-2.3.0-py3-none-any.whl", hash = "sha256:feb3f7f06bb9a5e7595d8ba4a0d87c6167376d893b6e8238de99e6586c7128c9", size = 3749, upload-time = "2026-06-14T13:29:35.877Z" },
 ]
 
 [[package]]
 name = "londonaicentre-mesa-utils"
 version = "1.2.0"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "ssh://git@github.com/londonaicentre/MESA-Build?subdirectory=lib%2Futils#4ffdd06f9e444600709ad9a0f099b2f19cd32cdc" }
 dependencies = [
     { name = "boto3" },
     { name = "bs4" },
@@ -1140,9 +1149,18 @@ dependencies = [
     { name = "markdown" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/7a/f793a952b2c4b3566eedc8118b269f7bf0ddfd8ab72ef2dbce649e6d1a7e/londonaicentre_mesa_utils-1.2.0.tar.gz", hash = "sha256:9b2f143b712d0b191270224678d3e5251460fd945147991ebfc75dc3cd300397", size = 7649, upload-time = "2026-07-03T14:23:20.485Z" }
+
+[[package]]
+name = "londonaicentre-oncoschema"
+version = "2.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "londonaicentre-mesa-utils" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ed/48/0121db9f51e791354fad7031336236ec70c3f5dbaa8449fe5974b214a2c8/londonaicentre_oncoschema-2.1.0.tar.gz", hash = "sha256:fddd5c23430bfb618eff86b099750b01b4847e47e26018aaf6f0e0b02426ad0f", size = 24436, upload-time = "2026-06-14T13:43:01.967Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/65/7d/2a128589d68c6b07abd0f50deae7704998a7788cb41c584adbe6be25e379/londonaicentre_mesa_utils-1.2.0-py3-none-any.whl", hash = "sha256:2b6b7269b38d391e83e29b7b12356a1d3ee68401320ca96a5751560f15201d14", size = 7438, upload-time = "2026-07-03T14:23:19.42Z" },
+    { url = "https://files.pythonhosted.org/packages/71/47/2617cdf8f5e78e3a724ea4b051f6f8558e2bd028fd9d6c30e4d223808362/londonaicentre_oncoschema-2.1.0-py3-none-any.whl", hash = "sha256:16495ff5f2506f8cd6008d99b2a4cd4e1e77976ede93f3b71fddb9001d31073b", size = 26492, upload-time = "2026-06-14T13:43:02.95Z" },
 ]
 
 [[package]]
@@ -1226,6 +1244,8 @@ dependencies = [
     { name = "dotenv" },
     { name = "ipykernel" },
     { name = "londonaicentre-docsynth" },
+    { name = "londonaicentre-mesa-datagen" },
+    { name = "londonaicentre-oncoschema" },
 ]
 
 [package.metadata]
@@ -1233,6 +1253,8 @@ requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "ipykernel", specifier = ">=7.3.0" },
     { name = "londonaicentre-docsynth", git = "ssh://git@github.com/londonaicentre/MESA-Docsynth?branch=spike%2Fmesa-build-refactor" },
+    { name = "londonaicentre-mesa-datagen", git = "ssh://git@github.com/londonaicentre/MESA-Build?subdirectory=lib%2Fdatagen" },
+    { name = "londonaicentre-oncoschema", specifier = ">=2.1.0" },
 ]
 
 [[package]]

@@ -8,7 +8,10 @@ dependencies = [
     "dotenv>=0.9.9",
     "ipykernel>=7.3.0",
     "londonaicentre-docsynth",
+    "londonaicentre-mesa-datagen",
+    "londonaicentre-oncoschema>=2.1.0",
 ]
 
 [tool.uv.sources]
 londonaicentre-docsynth = { git = "ssh://git@github.com/londonaicentre/MESA-Docsynth", branch = "spike/mesa-build-refactor" }
+londonaicentre-mesa-datagen = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/datagen" }
