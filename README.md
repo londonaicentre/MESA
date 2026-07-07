@@ -45,3 +45,7 @@ With these things in place:
 2. Obtain general access to AWS from your account manager and follow the instructions [here](https://docs.commonfate.io/granted/getting-started) to set up SSO authentication for use of the AWS CLI. Run `assume --env` to place credentials in a `.env` file.
 
 3. Obtain information on a Bedrock Execution IAM Role with S3 and model access and information on the name of an S3 bucket to upload a batch specification to. Place this information in the `.env` file as `BUCKET` and `BEDROCK_EXECUTION_ROLE`, respectively.
+
+### MESA Runtime credentials
+
+MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `BASE_URL` (provided URL of MESA Runtime's server), `USERNAME` and `PASSWORD`.
