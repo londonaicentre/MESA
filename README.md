@@ -17,9 +17,9 @@ This corpus is built using a large foundation model.
 
 2. Datagen passes each of these synthetic documents to (the same) foundation model, along with a custom schema containing target fields of interest (derived from domain knowledge). The model is prompted to standardise each document to the schema, creating a set of pairs illustrating the standardisation process.
 
-3. Finetune uses these pairs to train a smaller, open source model.
+3. Finetune uses these pairs to train a smaller, open source model. This is supported by the Runtime orchestration.
 
-4. Deploy provides an environment in which these fine-tuned models can be used for inference against the real documents.
+4. Deploy provides an environment in which these fine-tuned models can be used for inference against the real documents. This is paired with Runner (also orchestrated by Runtime), which efficiently gathers data to use as input to Deploy.
 
 <p align="center">
   <img src="_assets/components.svg" width="600" alt="MESA overview diagram">
