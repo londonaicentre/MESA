@@ -10,8 +10,10 @@ dependencies = [
     "londonaicentre-docsynth",
     "londonaicentre-mesa-datagen",
     "londonaicentre-oncoschema>=2.1.0",
+    "mesa-runtime",
 ]
 
 [tool.uv.sources]
 londonaicentre-docsynth = { git = "ssh://git@github.com/londonaicentre/MESA-Docsynth", branch = "spike/mesa-build-refactor" }
 londonaicentre-mesa-datagen = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/datagen" }
+mesa-runtime = { git = "https://github.com/londonaicentre/mesa-runtime.git", subdirectory = "lib" }

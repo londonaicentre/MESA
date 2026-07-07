@@ -1246,6 +1246,7 @@ dependencies = [
     { name = "londonaicentre-docsynth" },
     { name = "londonaicentre-mesa-datagen" },
     { name = "londonaicentre-oncoschema" },
+    { name = "mesa-runtime" },
 ]
 
 [package.metadata]
@@ -1255,6 +1256,16 @@ requires-dist = [
     { name = "londonaicentre-docsynth", git = "ssh://git@github.com/londonaicentre/MESA-Docsynth?branch=spike%2Fmesa-build-refactor" },
     { name = "londonaicentre-mesa-datagen", git = "ssh://git@github.com/londonaicentre/MESA-Build?subdirectory=lib%2Fdatagen" },
     { name = "londonaicentre-oncoschema", specifier = ">=2.1.0" },
+    { name = "mesa-runtime", git = "https://github.com/londonaicentre/mesa-runtime.git?subdirectory=lib" },
+]
+
+[[package]]
+name = "mesa-runtime"
+version = "0.1.0"
+source = { git = "https://github.com/londonaicentre/mesa-runtime.git?subdirectory=lib#8ff59ee021d7905baa0723dae29d06290c837e21" }
+dependencies = [
+    { name = "httpx" },
+    { name = "pydantic" },
 ]
 
 [[package]]
