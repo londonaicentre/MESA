@@ -10,7 +10,7 @@ MESA standardises free-text patient data under a schema of choice, in order to e
 
 ### Components
 
-MESA consists of a number of different components that work together in order to standardise data:
+MESA consists of a number of different components that work together to support the training of data standardisation models:
 
 1. Docsynth leverages an understanding of the structure of the real free-text data to build a synthetic corpus that emulates a wide range of possible real documents.
 This corpus is built using a large foundation model.
