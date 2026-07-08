@@ -27,11 +27,14 @@ This corpus is built using a large foundation model.
 
 This repository contains a notebook for each component, illustrating the standardisation process in practice.
 
-## Pre-requisites
+## Getting started
 
-Repo-wide package dependencies should be installed with `uv sync`.
+General repository requirements are listed below.
+In additional, different components have different pre-requisites, which are also listed below and referenced in individual notebooks.
 
-In additional, different components have different pre-requisites, which are listed below and referenced in individual notebooks.
+### Repo
+
+1. Install repo-wide package dependencies with `uv sync`.
 
 ### AWS Credentials
 
