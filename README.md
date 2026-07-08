@@ -29,9 +29,18 @@ This repository contains a notebook for each component, illustrating the standar
 
 ## Pre-requisites
 
-Repo-wide package dependencies should be installed with `uv sync`.
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
-In additional, different components have different pre-requisites, which are listed below and referenced in individual notebooks.
+## Getting started
+
+General repository requirements are listed below.
+In additional, different components have different pre-requisites, which are also listed below and referenced in individual notebooks.
+
+### Repo
+
+1. Initiate example data (stored as a Git submodule): `git submodule update --init`
+
+2. Install repo-wide package dependencies with `uv sync`.
 
 ### AWS Credentials
 
@@ -49,3 +58,7 @@ With these things in place:
 ### MESA Runtime credentials
 
 MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `BASE_URL` (provided URL of MESA Runtime's server), `USERNAME` and `PASSWORD`.
+
+### MESA Deploy credentials
+
+MESA Deploy, which collects model weights and runs them via a library (_offline_) or exposes them via a server (_remote_), has its own credentials, which should also be placed into a `.env` file as `WEIGHTS_ID` (a form of username) and `WEIGHTS_KEY` (a form of password).
