@@ -1,0 +1,16 @@
+job_name:
+  model_name: "oncotest_0_1_0"
+
+  inference:
+    openai_endpoint: "http://localhost:5000/v1"
+
+
+  storage:
+    type: filesystem
+
+    source_directory: "data/sample"
+    target_directory: "data/output"
+
+    input_file_format: "json"
+    output_file_format: "json"
+      

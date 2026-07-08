@@ -9,6 +9,8 @@ dependencies = [
     "ipykernel>=7.3.0",
     "londonaicentre-docsynth",
     "londonaicentre-mesa-datagen",
+    "londonaicentre-mesa-local>=2.8.1",
+    "londonaicentre-mesa-runner>=1.4.2",
     "londonaicentre-oncoschema>=2.1.0",
     "mesa-runtime",
 ]
@@ -17,3 +19,8 @@ dependencies = [
 londonaicentre-docsynth = { git = "ssh://git@github.com/londonaicentre/MESA-Docsynth", branch = "spike/mesa-build-refactor" }
 londonaicentre-mesa-datagen = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/datagen" }
 mesa-runtime = { git = "https://github.com/londonaicentre/mesa-runtime.git", subdirectory = "lib" }
+
+[dependency-groups]
+dev = [
+    "ty>=0.0.56",
+]

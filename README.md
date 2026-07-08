@@ -58,3 +58,7 @@ With these things in place:
 ### MESA Runtime credentials
 
 MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `BASE_URL` (provided URL of MESA Runtime's server), `USERNAME` and `PASSWORD`.
+
+### MESA Deploy credentials
+
+MESA Deploy, which collects model weights and runs them via a library (_offline_) or exposes them via a server (_remote_), has its own credentials, which should also be placed into a `.env` file as `WEIGHTS_ID` (a form of username) and `WEIGHTS_KEY` (a form of password).
