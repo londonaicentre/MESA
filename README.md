@@ -34,7 +34,9 @@ In additional, different components have different pre-requisites, which are als
 
 ### Repo
 
-1. Install repo-wide package dependencies with `uv sync`.
+1. Initiate example data (stored as a Git submodule): `git submodule update --init`
+
+2. Install repo-wide package dependencies with `uv sync`.
 
 ### AWS Credentials
 
