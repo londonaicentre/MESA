@@ -1,6 +1,6 @@
 # MESA
 
-MESA (Medical entity Extraction with Schema Alignment) standardises free-text patient data under a schema of choice, in order to enable downstream activities such as analytics and clinical trial recruitment.
+MESA (Medical entity Extraction with Schema Alignment) models standardise free-text patient data under a custom schema, in order to enable downstream activities such as analytics and clinical trial recruitment.
 
 <p align="center">
   <img src="_assets/overview.svg" width="700" alt="MESA overview diagram">
@@ -13,7 +13,7 @@ MESA (Medical entity Extraction with Schema Alignment) standardises free-text pa
 ## Getting started
 
 General repository requirements are listed below.
-In additional, different components have different pre-requisites, which are also listed below.
+In addition, different components have different pre-requisites, which are also listed below.
 
 ### Repo
 
@@ -46,8 +46,8 @@ MESA Deploy, which collects model weights and runs them via a library (_offline_
 
 MESA consists of a number of different components that work together to support the training of data standardisation models. This repository contains a set of a notebooks that demonstrate how to use these components. The components are as follows:
 
-1. `Docsynth` leverages an understanding of the structure of the real free-text data to build a synthetic corpus that emulates a wide range of possible real documents.
-This corpus is built using a large foundation model.
+1. `Docsynth` leverages embedded knowledge of the real free-text data's structure to build a synthetic corpus that emulates a wide range of possible real documents.
+This corpus is built using a foundation model.
 ([Notebook](docsynth/docsynth.ipynb))
 
 2. `Datagen` passes each of these synthetic documents to (the same) foundation model, along with a custom schema containing target fields of interest (derived from domain knowledge). The model is prompted to standardise each document to the schema, creating a set of pairs illustrating the standardisation process.
@@ -61,4 +61,4 @@ This corpus is built using a large foundation model.
 
 <p align="center">
   <img src="_assets/components.svg" width="600" alt="MESA overview diagram">
-</p>s
+</p>
