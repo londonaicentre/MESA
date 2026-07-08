@@ -27,6 +27,10 @@ This corpus is built using a large foundation model.
 
 This repository contains a notebook for each component, illustrating the standardisation process in practice.
 
+## Pre-requisites
+
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
 ## Getting started
 
 General repository requirements are listed below.
