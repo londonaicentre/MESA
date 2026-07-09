@@ -8,7 +8,7 @@ job_name:
   storage:
     type: filesystem
 
-    source_directory: "data/sample"
+    source_directory: "../data/sample"
     target_directory: "data/output"
 
     input_file_format: "json"
