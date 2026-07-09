@@ -1,6 +1,6 @@
 # MESA
 
-MESA (Medical entity Extraction with Schema Alignment) models standardise free-text patient data under a custom schema, in order to enable downstream activities such as analytics and clinical trial recruitment.
+Medical-concept Extraction with Schema Alignment (MESA) is the AIC's in-house framework for fine-tuning open-weight LLMs for clinical entity extraction.
 
 <p align="center">
   <img src="_assets/overview.svg" width="700" alt="MESA overview diagram">
