@@ -59,6 +59,9 @@ This corpus is built using a foundation model.
 4. `Deploy` provides an environment in which these fine-tuned models can be used for inference against the real documents. This is paired with `Runner` (also orchestrated by `Runtime`), which efficiently gathers data to use as input to Deploy.
 ([Notebook](deploy_and_runner/deploy_and_runner.ipynb))
 
+5. `Validate` supports human-in-the-loop review of the resulting extractions against the schema, calculating precision, recall and F1 for each field, class or enum value of interest.
+([Notebook](validate/validate.ipynb))
+
 <p align="center">
   <img src="_assets/components.svg" width="600" alt="MESA overview diagram">
 </p>
