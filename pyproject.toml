@@ -25,5 +25,6 @@ mesa-validate = { git = "https://github.com/londonaicentre/MESA-Validate.git" }
 
 [dependency-groups]
 dev = [
+    "nbstripout>=0.9.1",
     "ty>=0.0.56",
 ]
