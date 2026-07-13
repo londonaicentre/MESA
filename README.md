@@ -6,14 +6,14 @@ Medical-concept Extraction with Schema Alignment (MESA) is the AIC's in-house fr
   <img src="_assets/overview.svg" width="700" alt="MESA overview diagram">
 </p>
 
-## Pre-requisites
+## Prerequisites
 
 - [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ## Getting started
 
 General repository requirements are listed below.
-In addition, different components have different pre-requisites, which are also listed below.
+In addition, different components have different prerequisites, which are also listed below.
 
 ### Repo
 
@@ -65,3 +65,9 @@ This corpus is built using a foundation model.
 <p align="center">
   <img src="_assets/components.svg" width="600" alt="MESA overview diagram">
 </p>
+
+## Resources
+
+The notebooks in this repository have a companion video tutorial:
+
+[![Watch companion video tutorial](https://img.youtube.com/vi/fzaM88JKCPQ/0.jpg)](https://www.youtube.com/watch?v=fzaM88JKCPQ)
