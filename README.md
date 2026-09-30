@@ -28,11 +28,11 @@ This guide assumes these resources have already been configured by suitable MESA
 It also assumes an AWS account is available for use.
 With these things in place:
 
-1. Obtain a Bedrock API key from your account manager.
+1. Obtain general access to AWS from your account manager and follow the instructions [here](https://docs.commonfate.io/granted/getting-started) to set up SSO authentication for use of the AWS CLI. Run `assume --env` to place credentials in a `.env` file.
 
-2. Obtain general access to AWS from your account manager and follow the instructions [here](https://docs.commonfate.io/granted/getting-started) to set up SSO authentication for use of the AWS CLI. Run `assume --env` to place credentials in a `.env` file.
+2. Obtain information on a Bedrock Execution IAM Role with S3 and model access, and information on the name of an S3 bucket to upload a batch specification to. Place this information in the `.env` file as `BEDROCK_EXECUTION_ROLE` and `BUCKET`, respectively.
 
-3. Obtain information on a Bedrock Execution IAM Role with S3 and model access and information on the name of an S3 bucket to upload a batch specification to. Place this information in the `.env` file as `BUCKET` and `BEDROCK_EXECUTION_ROLE`, respectively.
+3. (Optional) Obtain a Bedrock API key from your account manager.
 
 ### MESA Runtime credentials
 
