@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-londonaicentre-docsynth = { git = "ssh://git@github.com/londonaicentre/MESA-Docsynth", branch = "spike/mesa-build-refactor" }
+londonaicentre-docsynth = { git = "ssh://git@github.com/londonaicentre/MESA-Docsynth" }
 londonaicentre-mesa-datagen = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/datagen" }
 mesa-runtime = { git = "https://github.com/londonaicentre/mesa-runtime.git", subdirectory = "lib" }
 mesa-validate = { git = "https://github.com/londonaicentre/MESA-Validate.git" }
