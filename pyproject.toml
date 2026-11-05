@@ -8,7 +8,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "ipykernel>=7.3.0",
     "ipywidgets>=8.1.7",
-    "londonaicentre-docsynth",
+    "londonaicentre-docsynth>=1.1.0",
     "londonaicentre-mesa-datagen",
     "londonaicentre-mesa-local>=2.8.1",
     "londonaicentre-mesa-runner>=1.4.2",
@@ -18,7 +18,6 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-londonaicentre-docsynth = { git = "ssh://git@github.com/londonaicentre/MESA-Docsynth" }
 londonaicentre-mesa-datagen = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/datagen" }
 mesa-runtime = { git = "https://github.com/londonaicentre/mesa-runtime.git", subdirectory = "lib" }
 mesa-validate = { git = "https://github.com/londonaicentre/MESA-Validate.git" }
