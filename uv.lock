@@ -2017,15 +2017,15 @@ dependencies = [
 
 [[package]]
 name = "londonaicentre-oncoschema"
-version = "2.1.0"
+version = "2.1.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "londonaicentre-mesa-utils" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ed/48/0121db9f51e791354fad7031336236ec70c3f5dbaa8449fe5974b214a2c8/londonaicentre_oncoschema-2.1.0.tar.gz", hash = "sha256:fddd5c23430bfb618eff86b099750b01b4847e47e26018aaf6f0e0b02426ad0f", size = 24436, upload-time = "2026-06-14T13:43:01.967Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/07/2f/b5f8b9356caa44ddb137f757dd722e01621d422199988c0238f834add789/londonaicentre_oncoschema-2.1.3.tar.gz", hash = "sha256:00b5c14c7e223c3a6f9db90a48d65871da850b96abb325131d26cf11c4cf0027", size = 24419, upload-time = "2026-11-12T17:38:39.309Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/71/47/2617cdf8f5e78e3a724ea4b051f6f8558e2bd028fd9d6c30e4d223808362/londonaicentre_oncoschema-2.1.0-py3-none-any.whl", hash = "sha256:16495ff5f2506f8cd6008d99b2a4cd4e1e77976ede93f3b71fddb9001d31073b", size = 26492, upload-time = "2026-06-14T13:43:02.95Z" },
+    { url = "https://files.pythonhosted.org/packages/84/82/0c9deec7be95ebfbbd78f2c2471a94bf9cc54f8fa1231ebc9caf5279b772/londonaicentre_oncoschema-2.1.3-py3-none-any.whl", hash = "sha256:b198c1015e95639037125d7c1622afcc8adfd6b9c0f0cee3a3483236e847181c", size = 26491, upload-time = "2026-11-12T17:38:37.673Z" },
 ]
 
 [[package]]
@@ -2180,7 +2180,7 @@ requires-dist = [
     { name = "londonaicentre-mesa-local", specifier = ">=2.8.1" },
     { name = "londonaicentre-mesa-runner", specifier = ">=1.4.2" },
     { name = "londonaicentre-mesa-runtime", specifier = ">=0.8.0" },
-    { name = "londonaicentre-oncoschema", specifier = ">=2.1.0" },
+    { name = "londonaicentre-oncoschema", specifier = ">=2.1.3" },
     { name = "mesa-validate", git = "https://github.com/londonaicentre/MESA-Validate.git" },
 ]
 

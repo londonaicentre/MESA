@@ -13,7 +13,7 @@ dependencies = [
     "londonaicentre-mesa-local>=2.8.1",
     "londonaicentre-mesa-runner>=1.4.2",
     "londonaicentre-mesa-runtime>=0.8.0",
-    "londonaicentre-oncoschema>=2.1.0",
+    "londonaicentre-oncoschema>=2.1.3",
     "mesa-validate",
 ]
 
