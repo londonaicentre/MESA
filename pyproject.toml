@@ -8,22 +8,25 @@ dependencies = [
     "dotenv>=0.9.9",
     "ipykernel>=7.3.0",
     "ipywidgets>=8.1.7",
-    "londonaicentre-docsynth>=1.1.0",
+    "londonaicentre-docsynth>=2.1.3",
     "londonaicentre-mesa-datagen",
     "londonaicentre-mesa-local>=2.8.1",
     "londonaicentre-mesa-runner>=1.4.2",
-    "londonaicentre-oncoschema>=2.1.0",
-    "mesa-runtime",
+    "londonaicentre-mesa-runtime>=0.8.0",
+    "londonaicentre-oncoschema>=2.1.3",
     "mesa-validate",
 ]
 
 [tool.uv.sources]
 londonaicentre-mesa-datagen = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/datagen" }
-mesa-runtime = { git = "https://github.com/londonaicentre/mesa-runtime.git", subdirectory = "lib" }
+londonaicentre-mesa-finetune = { git = "ssh://git@github.com/londonaicentre/MESA-Build", subdirectory = "lib/finetune" }
 mesa-validate = { git = "https://github.com/londonaicentre/MESA-Validate.git" }
 
 [dependency-groups]
 dev = [
     "nbstripout>=0.9.1",
     "ty>=0.0.56",
+]
+sagemaker = [
+    "londonaicentre-mesa-finetune",
 ]

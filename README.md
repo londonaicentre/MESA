@@ -23,20 +23,22 @@ In addition, different components have different prerequisites, which are also l
 
 ### AWS Credentials
 
-Some MESA components leverage AWS services such as Bedrock and S3.
+Some MESA components store their inputs and outputs in S3.
 This guide assumes these resources have already been configured by suitable MESA Infrastructure as Code (IaC).
 It also assumes an AWS account is available for use.
 With these things in place:
 
 1. Obtain general access to AWS from your account manager and follow the instructions [here](https://docs.commonfate.io/granted/getting-started) to set up SSO authentication for use of the AWS CLI. Run `assume --env` to place credentials in a `.env` file.
 
-2. Obtain information on a Bedrock Execution IAM Role with S3 and model access, and information on the name of an S3 bucket to upload a batch specification to. Place this information in the `.env` file as `BEDROCK_EXECUTION_ROLE` and `BUCKET`, respectively.
+2. Obtain the name of the MESA build S3 bucket, which MESA Runtime also reads batch inputs from and writes batch outputs to, along with access to it. Place it in the `.env` file as `BUCKET`.
 
-3. (Optional) Obtain a Bedrock API key from your account manager.
+3. (Optional) To run the AWS Bedrock alternatives in the docsynth and datagen notebooks, obtain information on a Bedrock Execution IAM Role with S3 and model access, and place it in the `.env` file as `BEDROCK_EXECUTION_ROLE`.
+
+4. (Optional) To run the AWS SageMaker alternative in the finetune notebook, obtain information on a SageMaker Execution IAM Role, place it in the `.env` file as `SAGEMAKER_EXECUTION_ROLE`, and install its dependencies with `uv sync --group sagemaker`.
 
 ### MESA Runtime credentials
 
-MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `BASE_URL` (provided URL of MESA Runtime's server), `USERNAME` and `PASSWORD`.
+MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `LLM__MESA_RUNTIME__BASE_URL` (provided URL of MESA Runtime's server), `LLM__MESA_RUNTIME__USERNAME` and `LLM__MESA_RUNTIME__PASSWORD`.
 
 ### MESA Deploy credentials
 
