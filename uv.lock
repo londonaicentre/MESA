@@ -2175,16 +2175,18 @@ wheels = [
 
 [[package]]
 name = "londonaicentre-mesa-runtime"
-version = "0.5.0"
+version = "0.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "boto3" },
     { name = "httpx" },
+    { name = "jmespath" },
     { name = "pydantic" },
+    { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/af/87/3421d8969e24f1966f8596e796313c834efde4f41872b17574e87fb02a08/londonaicentre_mesa_runtime-0.5.0.tar.gz", hash = "sha256:1946c5e61ed1da6591b6290fe27dcc6863d539aff23c5062c75375a867ced4b2", size = 5711, upload-time = "2026-10-18T19:02:11.53Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/86/b0/7daf93e9cbb1176241c39068096f8fd72f63738ca026e37f9403da848b72/londonaicentre_mesa_runtime-0.8.0.tar.gz", hash = "sha256:a2156351450d7c97ea557368eb89fe52187a225d7f39e7252be910433731a385", size = 5532, upload-time = "2026-11-14T23:07:01.656Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ce/7d/aa1155a24bc55f11447a79ceef805b76835bf2c4b93f108077b3e464879e/londonaicentre_mesa_runtime-0.5.0-py3-none-any.whl", hash = "sha256:423c1daad83a94f6915ca2868efbf75e8a675e5716273f04396f0b897123ecdd", size = 6835, upload-time = "2026-10-18T19:02:10.54Z" },
+    { url = "https://files.pythonhosted.org/packages/03/b1/1ba995aa08980bec5a6ac5f9fc1b20bcfd03ce7fbb460e16c579c7e521f0/londonaicentre_mesa_runtime-0.8.0-py3-none-any.whl", hash = "sha256:e46c935816582a4489560211cd8cc12ef36f9f37a652025eed6f5c2a19d36b38", size = 6583, upload-time = "2026-11-14T23:07:00.695Z" },
 ]
 
 [[package]]
@@ -2354,8 +2356,8 @@ dependencies = [
     { name = "londonaicentre-mesa-datagen" },
     { name = "londonaicentre-mesa-local" },
     { name = "londonaicentre-mesa-runner" },
+    { name = "londonaicentre-mesa-runtime" },
     { name = "londonaicentre-oncoschema" },
-    { name = "mesa-runtime" },
     { name = "mesa-validate" },
 ]
 
@@ -2374,8 +2376,8 @@ requires-dist = [
     { name = "londonaicentre-mesa-datagen", git = "ssh://git@github.com/londonaicentre/MESA-Build?subdirectory=lib%2Fdatagen" },
     { name = "londonaicentre-mesa-local", specifier = ">=2.8.1" },
     { name = "londonaicentre-mesa-runner", specifier = ">=1.4.2" },
+    { name = "londonaicentre-mesa-runtime", specifier = ">=0.8.0" },
     { name = "londonaicentre-oncoschema", specifier = ">=2.1.0" },
-    { name = "mesa-runtime", git = "https://github.com/londonaicentre/mesa-runtime.git?subdirectory=lib" },
     { name = "mesa-validate", git = "https://github.com/londonaicentre/MESA-Validate.git" },
 ]
 
@@ -2383,15 +2385,6 @@ requires-dist = [
 dev = [
     { name = "nbstripout", specifier = ">=0.9.1" },
     { name = "ty", specifier = ">=0.0.56" },
-]
-
-[[package]]
-name = "mesa-runtime"
-version = "0.1.0"
-source = { git = "https://github.com/londonaicentre/mesa-runtime.git?subdirectory=lib#8ff59ee021d7905baa0723dae29d06290c837e21" }
-dependencies = [
-    { name = "httpx" },
-    { name = "pydantic" },
 ]
 
 [[package]]

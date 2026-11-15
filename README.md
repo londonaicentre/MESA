@@ -36,7 +36,7 @@ With these things in place:
 
 ### MESA Runtime credentials
 
-MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `BASE_URL` (provided URL of MESA Runtime's server), `USERNAME` and `PASSWORD`.
+MESA Runtime, which provides training and inference orchestration, has its own credentials, which should also be placed into a `.env` file as `LLM__MESA_RUNTIME__BASE_URL` (provided URL of MESA Runtime's server), `LLM__MESA_RUNTIME__USERNAME` and `LLM__MESA_RUNTIME__PASSWORD`.
 
 ### MESA Deploy credentials
 
