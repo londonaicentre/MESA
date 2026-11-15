@@ -1,3 +1,4 @@
+data/
 debug.log
 *.json*
 !*example*
